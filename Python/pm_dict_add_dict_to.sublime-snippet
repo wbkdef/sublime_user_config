@@ -1,0 +1,11 @@
+<!-- pm_dict_add_dict_to.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_dict_add_dict_to(${1:d},${2:dict_to_add})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_dict_add_dict_to</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

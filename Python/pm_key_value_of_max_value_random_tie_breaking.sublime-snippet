@@ -1,0 +1,10 @@
+<!-- pm_take_exp_and_normalize.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_key_value_of_max_value_random_tie_breaking(${1:dict_})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_key_value_of_max_value_random_tie_breaking</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

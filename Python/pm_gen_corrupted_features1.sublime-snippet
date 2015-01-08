@@ -1,0 +1,11 @@
+<!-- pm_gen_corrupted_features1.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_gen_corrupted_features1(${1:x},${2:d})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_gen_corrupted_features1</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

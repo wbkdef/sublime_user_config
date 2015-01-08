@@ -1,0 +1,9 @@
+[
+	{
+		"args":
+		{
+			"name": "Packages/XML/long-tag.sublime-snippet"
+		},
+		"command": "insert_snippet"
+	}
+]

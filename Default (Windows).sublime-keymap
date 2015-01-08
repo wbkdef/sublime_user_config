@@ -1,0 +1,144 @@
+[
+	// Copy file name
+  {
+    "keys": ["cmd+shift+c"],
+    "command": "copy_path_to_clipboard"
+  },
+  // Close all other tabs
+  {
+    "keys": ["cmd+alt+w"],
+    "command": "close_tabs"
+  },
+	{ "keys": ["escape"], "command": "exit_insert_mode",
+		"context":
+		[
+			{ "key": "num_selections", "operand": 1},
+			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": false },
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["escape"], "command": "exit_visual_mode",
+		"context":
+		[
+			// { "key": "setting.command_mode"},
+			{ "key": "num_selections", "operand": 1},
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false }
+		]
+	},
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+	"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+	{ "keys": ["alt+shift+w","alt+shift+w"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.25, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["alt+shift+w","alt+shift+c"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+k","ctrl+l"],
+		"command": "toggle_setting",
+		"args": 
+		{
+			"setting": "line_numbers"
+		}
+	},
+
+
+
+// PROGRAMMING
+	{"keys": ["ctrl+1"], //For making snippets
+	 "command": "run_macro_file",
+	 "args": {"file": "Packages/User/Snippet_make_field.sublime-macro"},
+	 "context":
+	 	[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false }
+	 	]
+	},
+	{"keys": ["alt+shift+m","ctrl+p"], //For printing something!
+	 "command": "run_macro_file",
+	 "args": {"file": "Packages/User/Python/PythonPrint.sublime-macro"},
+	 "context":
+	 	[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false },
+			{ "key": "selector", "operator": "equal", "operand": "source.python" }
+	 	]
+	},
+	{"keys": ["alt+shift+m","ctrl+l"], //For printing something!
+	 "command": "run_macro_file",
+	 "args": {"file": "Packages/User/Python/Python_len.sublime-macro"},
+	 "context":
+	 	[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false },
+			{ "key": "selector", "operator": "equal", "operand": "source.python" }
+	 	]
+	},
+	{"keys": ["alt+shift+m","ctrl+s"], //For printing something!
+	 "command": "run_macro_file",
+	 "args": {"file": "Packages/User/Python/Python_str.sublime-macro"},
+	 "context":
+	 	[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false },
+			{ "key": "selector", "operator": "equal", "operand": "source.python" }
+	 	]
+	},
+
+	//PLAIN TASKS
+  { "keys": ["ctrl+alt+d"], "command": "plain_tasks_complete","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+  { "keys": ["ctrl+f"], "command": "plain_tasks_complete","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+	{ "keys": ["ctrl+d"], "command": "find_under_expand" },
+	
+	{ "keys": ["ctrl+i"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
+
+
+	{ "keys": ["f7"], "command":""},
+	{ "keys": ["f8"], "command":""},
+	{ "keys": ["f9"], "command":""},
+	{ "keys": ["ctrl+f7"], "command":""},
+	{ "keys": ["ctrl+f8"], "command":""},
+	{ "keys": ["ctrl+f9"], "command":""}
+
+// 	[
+//   { "keys": ["ctrl+d"], "command": "plain_tasks_complete","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["alt+c"], "command": "plain_tasks_cancel", "context": [{"key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["ctrl+enter"], "command": "plain_tasks_new","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["ctrl+i"], "command": "plain_tasks_new","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["ctrl+shift+a"], "command": "plain_tasks_archive","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["ctrl+shift+u"], "command": "plain_tasks_open_url","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["alt+o"], "command": "plain_tasks_open_link","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+//   { "keys": ["enter"], "command": "insert", "args": {"characters": "\n\t"}, "context":
+//     [
+//       { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+//       { "key": "setting.indent_after_task", "operator": "equal", "operand": true },
+//       { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+//       { "key": "selector", "operator": "equal", "operand": "text.todo" },
+//       { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*[-|+|✓|✔|❍|❑|■|□|☐|▪|▫|–|—|✘|x]\\s+.+", "match_all": true }
+//     ]
+//   },
+//   { "keys": ["tab"], "command": "plain_task_insert_date", "context":
+//     [
+//       { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+//       { "key": "selector", "operator": "equal", "operand": "text.todo" },
+//       { "key": "preceding_text", "operator": "regex_contains", "operand": "@started(?!\\([\\d\\w,\\.:\\-\/ @]*\\))", "match_all": true }
+//     ]
+//   }
+// ]
+]

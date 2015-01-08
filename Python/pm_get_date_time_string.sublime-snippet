@@ -1,0 +1,11 @@
+<!-- pm_get_date_time_string.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_get_date_time_string()
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_get_date_time_string</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

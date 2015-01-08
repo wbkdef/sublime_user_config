@@ -1,0 +1,11 @@
+<!-- pm_get_all_features.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_get_all_features(${1:list_of_sets_of_features},${2:show_pulse=True})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_get_all_features</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->
