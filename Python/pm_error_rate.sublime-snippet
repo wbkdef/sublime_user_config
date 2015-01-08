@@ -1,0 +1,11 @@
+<!-- pm_error_rate.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_error_rate(${1:Y1},${2:Y2})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_error_rate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

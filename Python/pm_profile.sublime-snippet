@@ -1,0 +1,11 @@
+<!-- pm_profile.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_profile(${1:func},${2:dict_parameters})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_profile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

@@ -1,0 +1,11 @@
+<!-- pm_dict_get_value_with_default.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_dict_get_value_with_default(${1:d},${2:key},${3:def_val=0})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_dict_get_value_with_default</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

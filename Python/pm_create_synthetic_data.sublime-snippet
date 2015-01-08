@@ -1,0 +1,11 @@
+<!-- pm_create_synthetic_data.sublime-snippet -->
+<snippet>
+	<content><![CDATA[
+pm.pm_create_synthetic_data(${1:num_labels},${2:num_feats=11},${3:num_train_labelled=20},${4:num_unlabelled=5},${5:num_test=10},${6:sparsity=3},${7:skew=2},${8:rand_seed=None})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pm_create_synthetic_data</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
+<!-- pm_pause(${1:num}) -->

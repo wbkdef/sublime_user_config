@@ -9,7 +9,12 @@
 	],
 	"installed_packages":
 	[
+		"Anaconda",
 		"AutoHotkey",
-		"Package Control"
+		"GitGutter",
+		"Gitignore",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter"
 	]
 }

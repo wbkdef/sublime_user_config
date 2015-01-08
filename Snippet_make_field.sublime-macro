@@ -1,0 +1,51 @@
+[
+	{
+		"args": null,
+		"command": "clear_bookmarks"
+	},
+	{
+		"args": null,
+		"command": "toggle_bookmark"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"characters": "${"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "1:"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "next_bookmark"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"characters": "}"
+		},
+		"command": "insert"
+	}
+]

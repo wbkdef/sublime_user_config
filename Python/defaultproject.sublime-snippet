@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+//Save as filename.sublime-project
+{
+    "folders":
+    [
+        {
+            "path": "FULL PATH HERE",
+            "folder_exclude_patterns": ["backup"]
+        }
+//        ,{ //Only if you need a second directory!
+//            "path": "FULL PATH HERE",
+//            "name": "Documentation",
+//            "file_exclude_patterns": ["*.css"]
+//        }
+    ],
+    "settings":
+    {
+        "tab_size": 3
+    }//,
+//    "build_systems":
+//    [
+//        {
+//            "name": "List",
+//            "cmd": ["ls"]
+//        }
+//    ]
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>project</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+	<scope></scope>
+</snippet>
