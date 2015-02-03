@@ -14,8 +14,11 @@
 		"GitGutter",
 		"Gitignore",
 		"Highlight",
+		"Markdown Preview",
+		"MarkdownEditing",
 		"Package Control",
 		"SideBarEnhancements",
+		"SmartMarkdown",
 		"SublimeLinter"
 	]
 }
