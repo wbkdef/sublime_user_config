@@ -10,7 +10,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Markdown"
+		"Markdown",
+		"SublimeCodeIntel"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

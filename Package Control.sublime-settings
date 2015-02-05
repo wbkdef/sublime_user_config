@@ -2,13 +2,9 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"Anaconda",
 		"AutoHotkey",
 		"GitGutter",
@@ -19,6 +15,7 @@
 		"Package Control",
 		"SideBarEnhancements",
 		"SmartMarkdown",
+		"SublimeCodeIntel",
 		"SublimeLinter"
 	]
 }
